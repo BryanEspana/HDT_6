@@ -14,19 +14,22 @@ public class vista {
     public int MenuHashMap(){
         System.out.println("Cargando inventario en formato HashMap, porfavor espere...\n");
         System.out.println("-------INVENTARIO DE PRODUCTOS EN FORMATO HASHMAP------");
-        int opcion = Scan.nextInt();
-        return opcion;
+        return 0;
     }
     public int MenuTreeMap(){
         System.out.println("Cargando inventario en formato TreeMap, porfavor espere...\n");
         System.out.println("-------INVENTARIO DE PRODUCTOS EN FORMATO TREEMAP------");
-        int opcion = Scan.nextInt();
-        return opcion;
+        return 0;
     }
     public int MenuLinkedHashMap(){
         System.out.println("Cargando inventario en formato LinkedHashMap, porfavor espere...\n");
         System.out.println("-------INVENTARIO DE PRODUCTOS EN FORMATO LINKEDHASHMAP------");
-        int opcion = Scan.nextInt();
-        return opcion;
+        return 0;
     }
+    public int MenuInventario(){
+        System.out.println("\nMenu de Inventario: \n1.) Agregar Productos \n2.) Buscar Producto \n3.) Salir");
+        int opcion = Scan.nextInt();
+        return opcion; 
+    }
+
 }
