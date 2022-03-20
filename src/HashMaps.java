@@ -1,7 +1,14 @@
+/* 
+    Hoja de Trabajo #6
+    Bryan Carlos Roberto España Machorro - 21550
+    Algoritmos y Estructura de Datos - Sección 10
+    Catedratico: Moises Alonso
+    Auxiliares:  Cristian Laynez y Rudik Rompich
+*/
+
 import java.util.*;
 
 public class HashMaps {
-
     public void InventarioPrint(){
     //Agregar la clase del mapa que se desea agregar
     HashMap<String, inventario> Categoria1Products = new HashMap<String, inventario>();
@@ -11,13 +18,13 @@ public class HashMaps {
     HashMap<String, inventario> Categoria5Products = new HashMap<String, inventario>();
     HashMap<String, inventario> Categoria6Products = new HashMap<String, inventario>();
     HashMap<String, inventario> Categoria7Products = new HashMap<String, inventario>();
-    String Categoria1 = "Mueble de terraza";
-    String Categoria2 = "Sillones de masaje";
-    String Categoria3 = "Bebidas";
-    String Categoria4 = "Condimentos";
-    String Categoria5 = "Frutas";
-    String Categoria6 = "Carnes";
-    String Categoria7 = "Lacteos";
+    String Categoria1 = "Mueble de terraza(1)";
+    String Categoria2 = "Sillones de masaje(2)";
+    String Categoria3 = "Bebidas(3)";
+    String Categoria4 = "Condimentos(4)";
+    String Categoria5 = "Frutas(5)";
+    String Categoria6 = "Carnes(6)";
+    String Categoria7 = "Lacteos(7)";
 
     //Agregar datos al mapa con put y los dos comonentes String y empleado 
 

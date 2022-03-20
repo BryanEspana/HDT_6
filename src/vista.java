@@ -1,3 +1,11 @@
+/* 
+    Hoja de Trabajo #6
+    Bryan Carlos Roberto España Machorro - 21550
+    Algoritmos y Estructura de Datos - Sección 10
+    Catedratico: Moises Alonso
+    Auxiliares:  Cristian Laynez y Rudik Rompich
+*/
+
 import java.util.Scanner;
 
 public class vista {
@@ -27,7 +35,7 @@ public class vista {
         return 0;
     }
     public int MenuInventario(){
-        System.out.println("\nMenu de Inventario: \n1.) Agregar Productos \n2.) Buscar Producto \n3.) Salir");
+        System.out.println("\nMenu de Cliente: \n1.) Agregar Producto a Carrito  \n2.) Buscar Producto \n3.) Carrito  \n4.) Salir");
         int opcion = Scan.nextInt();
         return opcion; 
     }
