@@ -3,13 +3,16 @@ public class controlador {
         vista vista = new vista();
         leerDatos leerDatos = new leerDatos();
         AddProducts AddProducts = new AddProducts();
+        HashMaps HashMap = new HashMaps();
+
 
         int opcion = vista.menuMaps();
         //String Inventariotxt = lw.leerArchivo("ListadoProducto.txt");
+
         switch(opcion) {
             case 1:     
                 vista.MenuHashMap();
-                leerDatos.Readtxt(); 
+                HashMap.InventarioPrint();
                 opcion = vista.MenuInventario();
                 switch(opcion) {
                     case 1:

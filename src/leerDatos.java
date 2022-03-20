@@ -10,7 +10,7 @@ public class leerDatos {
       BufferedReader br = null;
 
       try {
-         archivo = new File ("C:\\Users\\Bryan\\OneDrive - Universidad del Valle de Guatemala\\Documentos\\UVG\\SEMESTRE III\\Algoritmos y Estructura de Datos\\Hoja de Trabajo 6\\HDT_6\\src\\ListadoProducto.txt");
+         archivo = new File ("HDT_6\\src\\ListadoProducto.txt");
          fr = new FileReader (archivo);
          br = new BufferedReader(fr);
 
