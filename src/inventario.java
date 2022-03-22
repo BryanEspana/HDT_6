@@ -11,11 +11,15 @@ import java.util.*;
 class inventario{
     //Variables de Categoria y Producto
     private String Total;
+    private int TotalInt;
 
     //Inventario 
     public inventario(String n){
         Total = n;
 }
+public inventario(int totalProductos) {
+        TotalInt = totalProductos;
+    }
 public String toString(){
     return Total;
 }

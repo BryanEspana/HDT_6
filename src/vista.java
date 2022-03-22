@@ -35,7 +35,7 @@ public class vista {
         return 0;
     }
     public int MenuInventario(){
-        System.out.println("\nMenu de Cliente: \n1.) Agregar Producto a Carrito  \n2.) Buscar Producto \n3.) Carrito  \n4.) Salir");
+        System.out.println("\n-----------Menu de Cliente:----------- \n1.) Agregar Producto a Carrito  \n2.) Buscar Producto \n3.) Carrito\n4.) Inventario \n5.) Salir");
         int opcion = Scan.nextInt();
         return opcion; 
     }

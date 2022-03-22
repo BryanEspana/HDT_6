@@ -9,7 +9,6 @@
 import java.util.*;
 
 public class HashMaps {
-    public void InventarioPrint(){
     //Agregar la clase del mapa que se desea agregar
     HashMap<String, inventario> Categoria1Products = new HashMap<String, inventario>();
     HashMap<String, inventario> Categoria2Products = new HashMap<String, inventario>();
@@ -18,111 +17,150 @@ public class HashMaps {
     HashMap<String, inventario> Categoria5Products = new HashMap<String, inventario>();
     HashMap<String, inventario> Categoria6Products = new HashMap<String, inventario>();
     HashMap<String, inventario> Categoria7Products = new HashMap<String, inventario>();
-    String Categoria1 = "Mueble de terraza(1)";
-    String Categoria2 = "Sillones de masaje(2)";
-    String Categoria3 = "Bebidas(3)";
-    String Categoria4 = "Condimentos(4)";
-    String Categoria5 = "Frutas(5)";
-    String Categoria6 = "Carnes(6)";
-    String Categoria7 = "Lacteos(7)";
 
-    //Agregar datos al mapa con put y los dos comonentes String y empleado 
-
+    public void InventarioPrint(){
     //Productos de Mueble de terrazas
-    Categoria1Products.put("Mesas de jardín", new inventario("5"));
-    Categoria1Products.put("Sillas de jardín", new inventario("6"));
-    Categoria1Products.put("Conjuntos mesas y sillas de jardín", new inventario("10"));
-    Categoria1Products.put("Mesas de Ping Pong exteriores", new inventario("2"));
+    Categoria1Products.put("Mesas de jardín", new inventario("Producto 1:"));
+    Categoria1Products.put("Sillas de jardín", new inventario("Producto 2:"));
+    Categoria1Products.put("Conjuntos mesas y sillas de jardín", new inventario("Producto 3:"));
+    Categoria1Products.put("Mesas de Ping Pong exteriores", new inventario("Producto 4:"));
 
     //Sillones de masajes
-    Categoria2Products.put("Cojines y colchonetas de masaje", new inventario("15"));
-    Categoria2Products.put("Sillones relax y sofás de masajes", new inventario("10"));
-    Categoria2Products.put("Sillones de masajes avanzados", new inventario("15"));
-    Categoria2Products.put("Sofás camas", new inventario("10"));
+    Categoria2Products.put("Cojines y colchonetas de masaje", new inventario("Producto 1:"));
+    Categoria2Products.put("Sillones relax y sofás de masajes", new inventario("Producto 2:"));
+    Categoria2Products.put("Sillones de masajes avanzados", new inventario("Producto 3:"));
+    Categoria2Products.put("Sofás camas", new inventario("Producto 4:"));
     
     //Bebidas
-    Categoria3Products.put("Cerveza tibetana Barley", new inventario("50"));
-    Categoria3Products.put("Té frios", new inventario("30"));
-    Categoria3Products.put("Cocacola 1 litro", new inventario("90"));
-    Categoria3Products.put("Cocacola 2 litros", new inventario("70"));
+    Categoria3Products.put("Cerveza tibetana Barley", new inventario("Producto 1:"));
+    Categoria3Products.put("Té frios", new inventario("Producto 2:"));
+    Categoria3Products.put("Cocacola 1 litro", new inventario("Producto 3:"));
+    Categoria3Products.put("Cocacola 2 litros", new inventario("Producto 4:"));
 
     //Condimentos
-    Categoria4Products.put("Sirope de regaliz", new inventario("130"));
-    Categoria4Products.put("Especies Cajun del chef", new inventario("150"));
-    Categoria4Products.put("Mezcla Gumbo del chef", new inventario("190"));
+    Categoria4Products.put("Sirope de regaliz", new inventario("Producto 1:"));
+    Categoria4Products.put("Especies Cajun del chef", new inventario("Producto 2:"));
+    Categoria4Products.put("Mezcla Gumbo del chef", new inventario("Producto 3:"));
 
     //Frutas
-    Categoria5Products.put("Peras secas", new inventario("30"));
-    Categoria5Products.put("Pasas", new inventario("100"));
-    Categoria5Products.put("Manzana roja", new inventario("50"));
-    Categoria5Products.put("Manzana verde", new inventario("50"));
+    Categoria5Products.put("Peras secas", new inventario("Producto 1:"));
+    Categoria5Products.put("Pasas", new inventario("Producto 2:"));
+    Categoria5Products.put("Manzana roja", new inventario("Producto 3:"));
+    Categoria5Products.put("Manzana verde", new inventario("Producto 4:"));
 
     //Carnes
-    Categoria6Products.put("Res", new inventario("15"));
-    Categoria6Products.put("Pollo", new inventario("15"));
-    Categoria6Products.put("Cerdo", new inventario("15"));
-    Categoria6Products.put("Camarones", new inventario("10"));
-    Categoria6Products.put("Pescado", new inventario("10"));
+    Categoria6Products.put("Res", new inventario("Producto 1:"));
+    Categoria6Products.put("Pollo", new inventario("Producto 2:"));
+    Categoria6Products.put("Cerdo", new inventario("Producto 3:"));
+    Categoria6Products.put("Camarones", new inventario("Producto 4:"));
+    Categoria6Products.put("Pescado", new inventario("Producto 5:"));
 
     //Lacteos
-    Categoria7Products.put("Queso de cabra", new inventario("30"));
-    Categoria7Products.put("Queso Manchego ", new inventario("25"));
-    Categoria7Products.put("Leche descremada", new inventario("20"));
-    Categoria7Products.put("Leche deslactosada", new inventario("20"));
-    Categoria7Products.put("Leche entera", new inventario("20"));
+    Categoria7Products.put("Queso de cabra", new inventario("Producto 1:"));
+    Categoria7Products.put("Queso Manchego", new inventario("Producto 2:"));
+    Categoria7Products.put("Leche descremada", new inventario("Producto 3:"));
+    Categoria7Products.put("Leche deslactosada", new inventario("Producto 4:"));
+    Categoria7Products.put("Leche entera", new inventario("Producto 5:"));
 
-
-    //Eliminar Un dato del mapa con remove (Se coloca un componente del dato que se desea eliminar) 
-    /*productos.remove("147");
-    System.out.print(productos);
-    productos.put("147", new inventario("Angel"));
-    productos.put("147", new inventario("Gabriel"));
-    System.out.println("\n"+productos);*/
-
-    //Esto es para al imprimir el mapa envez de que salga con {} salga con []
-    //System.out.println(productos.entrySet());
-    System.out.println("======="+Categoria1+"========");
+    //Imprimir el HashMap
+    System.out.println("=======Mueble de terraza(1)========");
     for(Map.Entry<String, inventario> Entrada: Categoria1Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("======="+Categoria2+"========");
+    System.out.println("=======Sillones de masaje(2)========");
     for(Map.Entry<String, inventario> Entrada: Categoria2Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("============="+Categoria3+"=============");
+    System.out.println("=============Bebidas(3)=============");
     for(Map.Entry<String, inventario> Entrada: Categoria3Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("==========="+Categoria4+"==========");
+    System.out.println("===========Condimentos(4)==========");
     for(Map.Entry<String, inventario> Entrada: Categoria4Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("============="+Categoria5+"=============");
+    System.out.println("=============Frutas(5)=============");
     for(Map.Entry<String, inventario> Entrada: Categoria5Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("============="+Categoria6+"=============");
+    System.out.println("=============Carnes(6)=============");
     for(Map.Entry<String, inventario> Entrada: Categoria6Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
-    System.out.println("============="+Categoria7+"=============");
+    System.out.println("=============Lacteos(7)=============");
     for(Map.Entry<String, inventario> Entrada: Categoria7Products.entrySet()){
         String Product = Entrada.getKey();
         inventario cate = Entrada.getValue();
         System.out.println(cate+" "+Product);
     }
+    }
 
+    //METODOS PARA BUSCAR UN TIPO DE CATEGORIA
+    public void SearchCategory1(){
+        System.out.println("=======Mueble de terraza========");
+    for(Map.Entry<String, inventario> Entrada: Categoria1Products.entrySet()){
+        String Product = Entrada.getKey();
+        inventario cate = Entrada.getValue();
+        System.out.println(cate+" "+Product);}
+    }
+    public void SearchCategory2(){
+        System.out.println("=======Sillones de Masaje========");
+        for(Map.Entry<String, inventario> Entrada: Categoria2Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
+    }
+    public void SearchCategory3(){
+        System.out.println("=============Bebidas=============");
+        for(Map.Entry<String, inventario> Entrada: Categoria3Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
+    }
+    public void SearchCategory4(){
+        System.out.println("===========Condimentos==========");
+        for(Map.Entry<String, inventario> Entrada: Categoria4Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
+    }
+    public void SearchCategory5(){
+        System.out.println("=============Frutas=============");
+        for(Map.Entry<String, inventario> Entrada: Categoria5Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
+    }
+    public void SearchCategory6(){
+        System.out.println("=============Carnes=============");
+        for(Map.Entry<String, inventario> Entrada: Categoria6Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
+    }
+    public void SearchCategory7(){
+        System.out.println("=============Lacteos=============");
+        for(Map.Entry<String, inventario> Entrada: Categoria7Products.entrySet()){
+            String Product = Entrada.getKey();
+            inventario cate = Entrada.getValue();
+            System.out.println(cate+" "+Product);
+        }
     }
 }
